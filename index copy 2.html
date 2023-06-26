@@ -17,12 +17,13 @@
     <header class="header">
         <div class="header_back container">
             <img class="header__background container">
-            <nav class="navbar navbar-dark  navbar-expand-md   ">
+            <nav class="navbar navbar-dark  navbar-expand-md  ">
                 <div class="container-fluid">
                     <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
-                    <div>
-                        <img class="d-md-none" src="img/logo/figma-logo.png" alt="Firma logo">
-                    </div>
+                    <img class="d-md-none" src="img/logo/figma-logo.png" alt="Firma logo">
+
+                    <!-- <img class="d-none d-lg-block" src="img/logo/figma-logo.png" alt="Firma logo"> -->
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <svg xmlns="http://www.w3.org/2000/svg" width=30px height=30px fill=white
@@ -32,21 +33,19 @@
                         </svg>
                         <!-- <img src="img/logo/menu_icon.png" alt="Menu"> -->
                     </button>
-                    <div class="offcanvas  offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    <div class="offcanvas   offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-                            <div>
-                                <img  src="img/logo/figma-logo.png" alt="Firma logo">
-                            </div>
+                            <img src="img/logo/figma-logo.png" alt="Firma logo">
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body flex-md-row align-items-md-center ">
-                            <div class="col-md-5">
-                                <ul class="navbar-nav justify-content-md-evenly ">
-                                    <li class="nav-item ">
-                                        <a class="nav-link active align-items-md-center " aria-current="page" href="#">Home</a>
+                        <div class="offcanvas-body row ">
+                            <div class="col col-5">
+                                <ul class="navbar-nav align-items-md-center justify-content-md-around  pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active" href="#">Product</a>
@@ -62,12 +61,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="navbar-nav col-md-5  justify-content-md-start align-content-center">
-                                <div>
-                                    <img class="d-none d-md-block" min-width=170px src="img/logo/figma-logo.png" alt="Firma logo">    
-                                </div>
+                            <div class="navbar-nav justify-content-start  col col-5">
+                                <img class="d-none d-md-block" src="img/logo/figma-logo.png" alt="Firma logo">                                
                             </div>
-                            <div class="navbar-nav col-md-2 justify-content-end sm-icons">
+                            <div class="navbar-nav justify-content-end col col-2 sm-icons align-items-center ">
                                 <a class="nav-link" href="https://www.twitter.com/" target="_blank">
                                     <img src="img/logo/twitter-icon.png" alt="Linkedin">
                                 </a>
@@ -97,47 +94,33 @@
         </div>
     </header>
     <main>
-        <section id="features container" 
-        class="features container flex-column  text-center">
-            <div class="features__header card ">
-                <div class="card-body">
-                    <h2 class="card-body">Features</h2>
-                    <h4 class="card-text">Most calendars are designed for teams.
-                        Slate is designed for freelancers</h4>
-                </div>
-                <img class="features__img-top d-md-none card-img-top" src="img/pic/screen.png" alt="screen content">
+        <section id="features" class="features">
+            <div class="features__header">
+                <h2>Features</h2>
+                <p>Most calendars are designed for teams.
+                    Slate is designed for freelancers</p>
+                <img src="img/screen-content.png" width="400" alt="screen content">
             </div>
-            <div class="features__items d-md-flex w-75 mx-auto">
-                <div class="f-items card w-75 mx-auto p-2">
-                    <img class="w-auto mx-auto" src="img/mdi/mdi-circle-square.png" alt="circle square">
-                    <div class="card-body">
-                        <h3 class="card-body">OpenType features 
-                            Variable fonts</h3>
-                        <p class="card-text">Slate helps you see how 
-                            many more days you need 
-                            to work to reach your 
-                            financial goal.</p>
-                    </div>
+            <div class="features__items">
+                <div class="features__items-fonts">
+                    <img class="img" src="img/mdi/mdi-circle-square.png" alt="circle square">
+                    <h3>OpenType features Variable fonts</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
-                <div class="f-items card w-75 mx-auto p-2">
-                    <img class="w-auto mx-auto" src="img/mdi/mdi_drawing.png" alt="drawing">
-                    <div class="card-body">
-                        <h3 class="card-body">Design with real data</h3>
-                        <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                    </div>
+                <div class="features__items-design">
+                    <img src="img/mdi/mdi_drawing.png" alt="drawing">
+                    <h3>Design with real data</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
-                <div class="f-items card w-75 mx-auto p-2">
-                    <img class="w-auto mx-auto" src="img/mdi/mdi_brush.png" alt="brush">
-                    <div class="card-body">
-                        <h3 class="card-body">Fastest way to take action</h3>
-                        <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                    </div>
+                <div class="features__items-action">
+                    <img src="img/mdi/mdi_brush.png" alt="brush">
+                    <h3>Fastest way to take action</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
             </div>
-            <img class="features__img-bottom card-img-bottom" src="img/screen-content.png" alt="screen content">
 
         </section>
-        <section class="organize container flex-column  text-center">
+        <section class="organize">
             <div class="organize__left">
                 <h2>Fastest way to organize</h2>
                 <p>Most calendars are designed for teams. Slate is designed for freelancers
@@ -147,7 +130,6 @@
         </section>
     </main>
     <footer>
- 
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

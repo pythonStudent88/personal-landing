@@ -1,0 +1,21 @@
+/* .features{
+    margin-top: 90px;
+} */
+
+.features__img{
+    margin-top: 66px;
+}
+
+.features h4{
+    margin-top: 27px;
+}
+
+.features p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.features .f-items{
+    margin-top: 82px;
+}
